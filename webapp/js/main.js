@@ -188,4 +188,9 @@ socket.on('get_download_image', function(path) {
 	document.body.removeChild(a);
 });
 
+socket.on('get_allow_capture_from_webapp'), function(allow) {
+    if (!allow) {
+        $('my-trigger-button').delete();
+    }
+}
 

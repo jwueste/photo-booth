@@ -23,7 +23,8 @@
 	"webapp": {
 		"password": "test",
 		"maxDownloadImageSize": 800,
-		"enableRemoteRelease": true
+		"enableRemoteRelease": true,
+		"allowCapture": false
 	},
 	"branding": {
 		"type": "text",

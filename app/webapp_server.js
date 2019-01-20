@@ -205,6 +205,12 @@ io.on('connection', function(socket){
 		}
 	});
 
+	socket.on('get_allow_capture_from_webapp', function(json) {
+	    var config = JSON.parse(utils.getConfig());
+
+	    io.to(socket.id).emit('get_allow_capture_from_webapp', config['webapp']['allowCapture'] );
+	});
+
 });
 
 function passwordIsValid(password) {
